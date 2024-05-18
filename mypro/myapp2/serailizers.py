@@ -5,4 +5,4 @@ from .models import Family
 class FamilySerlizer(serializers.ModelSerializer):
     class Meta:
         model = Family
-        fields = '__all__'  .....#fifol
+        fields = '__all__'  
