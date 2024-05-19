@@ -10,4 +10,7 @@ from rest_framework.response import Response
 class FamilylistView (APIView):
     def get (self , request):
         familys=Family.objects.all()
+        Familysserializers=FamilySerlizer(familys , many=True)
+        json = Familysserializers
+        return Response(json)
         
