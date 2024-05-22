@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Family(models.Model):
     grandfather=models.CharField(max_length=20)
     grandmother=models.CharField(max_length=20)
